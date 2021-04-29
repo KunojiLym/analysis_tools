@@ -241,7 +241,7 @@ def plot_top_n(source_df, col_to_plot, n, agg_type, category_col, subcategory_co
 
     # change values to percentage if needed
     if plot_type == 'percent':
-        if comparison_col is None:
+        if comparison_col is +None:
             cat_df[agg_type] /= cat_df[agg_type].agg(others_agg)
         else:
             new_cat_dflist = []
